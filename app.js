@@ -8,20 +8,18 @@ dimensionBtN.addEventListener('click',changeDimension)
 let resetBtn = document.querySelector('#reset-btn')
 
 
-
 function createSquare(num){
     for(let i = 0; i < num; i++){
         square = document.createElement('div')
         square.classList.add('square')
         grid.appendChild(square)
-
     }
 }
 
 function targetAllSquare(squareDiv2){
     squareDiv2.forEach(element => {
         element.addEventListener('mouseover', function(){
-           element.classList.add('background')
+        element.classList.add('background')
         })
     })
 }
